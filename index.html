@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>My Selfie App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       
+       <link href="style.css" rel="stylesheet">
+       
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+       
+       
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="myselfie.png"></a>
+        <h1>Voice Selfie App 
+        <img id="logo_img" src="data:image/png;base64,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">
+        </h1>
+        <hr>
+        <h4 style="color:red;">Please press allow as soon as the popup comes. After, give a voice command</h4>
+        
+        <div class="form-group">
+            <h3>Say "Take my selfie"</h3>
+            <label>Your voice output : </label>
+        <textarea class="form-control" id="textbox" readonly="true"></textarea>
+        </div>
+       <button class="btn btn-primary" onclick="start()">Start</button>
+        <p>Press the Start button</p>
+
+        <label>Your webcam : </label>
+       <div id="camera"></div>
+        <br>
+
+        <label>Your selife Will Display Here: </label>
+        <div id="result"></div>
+
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
